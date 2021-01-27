@@ -35,9 +35,6 @@ nav .groups .menu ul{
 nav .groups .menu ul li{
     margin: 0 10px;
 }
-nav .groups .menu ul li a.active{
-    color: #0181f6;
-}
 nav .groups .menu ul li a{
     text-decoration: none;
     color: #555;
@@ -46,6 +43,23 @@ nav .groups .menu ul li a{
     cursor: pointer;
     transition: .5s;
     transition-property: color;
+    position: relative;
+}
+nav .groups .menu ul li a::before{
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    height: 2px;
+    width: 70%;
+    transition: .5s;
+    transition-property: color,transform;
+    transform: scalex(0);
+    transform-origin: left;
+}
+nav .groups .menu ul li a:hover::before
+{
+    transform: scalex(1);
 }
 nav .groups .menu .pages{
     position: relative;
@@ -68,10 +82,6 @@ nav .groups .menu .pages:hover .pages_open{
     transform: scaley(1);
     opacity: 1;
 }
-nav .groups .menu ul li a:hover,
-nav .groups .setting span:hover i{
-    color: #3a4aec
-}
 /* nav .groups .setting{
     padding-top: 20px
 } */
@@ -90,10 +100,6 @@ nav .groups .setting span{
 nav .groups .setting span i{
     color: #555
 }
-nav .groups .setting button:hover{
-    background-color: #3a4aec;
-    color: #eee
-}
 
 
 /* End Nav */
@@ -110,7 +116,6 @@ nav .groups .setting button:hover{
     display: block;
     width: 5%;
     height: 100%;
-    background: #384aeb;
     position: absolute;
     top: 0;
     left: 0;
@@ -141,14 +146,6 @@ nav .groups .setting button:hover{
 }
 .header_content p {
     margin-bottom: 10px;
-}
-.header .header_content button.min_btn{
-    background-color: #384aeb;
-    color: #eee
-}
-.header .header_content button.min_btn:hover{
-    background-color: transparent;
-    color: #222
 }
 /* **********Start Media-Header********** */
 @media (min-width: 575px){
@@ -280,13 +277,11 @@ nav .groups .setting button:hover{
     border: 0;
     border-radius: 0;
     padding: 7px 12px;
-    background: #8894ff;
     outline: none;
     transition: .5s;
     transition-property: background;
 }
 .product-card ul li button:hover{
-    background: #384aeb
 }
 .product-card ul li button i{
 font-size: 15px;
@@ -505,13 +500,11 @@ button.owl-next
     text-align: center
 }
 .min_btn{
-    padding: 10px 30px;
     background: transparent;
-    border: .5px solid #ccc;
     border-radius: 20px;
     font-weight: 600;
     cursor: pointer;
-    outline: none;
+    outline: none !important;
     margin: 0;
     transition: .5s;
     transition-property: color,background;
@@ -523,7 +516,6 @@ button.owl-next
     left: -300px;
     width: 300px;
     height: 300px;
-    background-color: #0181f6;
     transition: .5s;
     border-radius: 100%;
     z-index: 111;
@@ -553,7 +545,6 @@ button.owl-next
     margin-top: 10px;
 }
 .border-b{
-    border-bottom: 2px solid #384aeb;
     padding-bottom: 8px;
 }
 .mt-200px{

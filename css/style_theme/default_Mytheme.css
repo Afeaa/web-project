@@ -1,0 +1,57 @@
+.header::before {
+    background-color: #384aeb;
+}
+
+button.min_btn {
+    background-color: transparent !important;
+    color: #3a4aec;
+    border: 1px solid #3a4aec !important
+}
+button.min_btn:hover{
+    background-color: #3a4aec !important;
+    color: wheat
+}
+nav .groups .menu ul li a.active {
+    color: #0181f6;
+}
+
+.overlay_rud {
+    background-color: #0181f6;
+}
+
+span.border-b {
+    border-bottom: 2px solid #384aeb;
+}
+
+.product-card ul li button {
+    background: #8894ff;
+}
+
+.product-card ul li button:hover {
+    background-color: #384aeb;
+}
+
+li.ml-2.btn.btn-primary.mt-1.control {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+li.active.btn.btn-primary.mt-1.control.mixitup-control-active {
+    background-color: #0062cc;
+    border-color: #005cbf;
+}
+
+button.btn.btn-primary.mb-2 {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.footer i.fa.fa-heart {
+    color: #384aeb;
+}
+nav .groups .menu ul li a:hover, nav .groups .setting span:hover i{
+    color: #384aeb;
+}
+nav .groups .menu ul li a::before{
+    background: #0190f8;
+}

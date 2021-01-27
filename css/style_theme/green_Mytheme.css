@@ -1,8 +1,12 @@
 .header::before {
     background-color: #009688;
 }
-
-button.min_btn {
+button.min_btn{
+    background-color: transparent !important;
+    color: #009688;
+    border: 1px solid #009688 !important;
+}
+button.min_btn:hover {
     background-color: #009688 !important;
     color: white;
 }
@@ -32,14 +36,16 @@ li.ml-2.btn.btn-primary.mt-1.control {
     border-color: #03766b;
 }
 
-li.active.btn.btn-primary.mt-1.control.mixitup-control-active {
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show>.btn-primary.dropdown-toggle{
     background: #03766b;
     border-color: #03766b;
 }
 
 button.btn.btn-primary.mb-2 {
     background-color: #009688;
-    border-color: #03766b;
+    border-color: #009688;
 }
 
 .footer i.fa.fa-heart {
@@ -47,4 +53,7 @@ button.btn.btn-primary.mb-2 {
 }
 nav .groups .menu ul li a:hover, nav .groups .setting span:hover i{
     color: #03766b;
+}
+nav .groups .menu ul li a::before{
+    background: #03766b;
 }

@@ -67,13 +67,8 @@ $(document).ready(function(){
             }
        });
    });
+    $('.theme-btns li').on('click', function(){
+        $("link[href*='Mytheme']").attr("href","css/style_theme/" + $(this).data('color') + ".css");
+    });
 
-   $('.theme-btns li').on('click', function () {
-       if($(this).data('color')!= 'blue'){
-            var colorName ="css/style."+$(this).data('color')+".color.css";
-            $('.theme').attr('href', colorName);
-       }else{
-           $('.theme').removeAttr('href');
-       }
-   });
 });
