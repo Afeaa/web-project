@@ -1,0 +1,50 @@
+.header::before {
+    background-color: #E91E63;
+}
+
+button.min_btn {
+    background-color: #E91E63 !important;
+    color: white;
+}
+
+nav .groups .menu ul li a.active {
+    color: #E91E63;
+}
+
+.overlay_rud {
+    background-color: #E91E63;
+}
+
+span.border-b {
+    border-bottom: 2px solid #E91E63;
+}
+
+.product-card ul li button {
+    background: #e91e63c9;
+}
+
+.product-card ul li button:hover {
+    background-color: #E91E63;
+}
+
+li.ml-2.btn.btn-primary.mt-1.control {
+    background: #E91E63;
+    border-color: #990034;
+}
+
+li.active.btn.btn-primary.mt-1.control.mixitup-control-active {
+    background: #990034;
+    border-color: #990034;
+}
+
+button.btn.btn-primary.mb-2 {
+    background-color: #e91e63;
+    border-color: #85012e;
+}
+
+.footer i.fa.fa-heart {
+    color: #e91e63;
+}
+nav .groups .menu ul li a:hover, nav .groups .setting span:hover i{
+    color: #85012e;
+}
